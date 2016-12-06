@@ -1,0 +1,34 @@
+
+<div id="myCarousel" class="carousel slide">
+      <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+        <?php
+        $sql = "SELECT _id, _name, _status, _picture
+        from es_banner";
+        $q = $conn->prepare($sql);
+        $q->execute();
+        $i=0;
+        while($result = $q->fetch(PDO::FETCH_OBJ))
+        {
+
+        ?>
+            <li data-target="#myCarousel" data-slide-to="<?php echo $i; ?>" class="" ></li>
+            <?php $i++; } ?>
+        </ol>   
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+        <?php
+        $sql = "SELECT _id, _name, _status, _picture
+        from es_banner";
+        $q = $conn->prepare($sql);
+        $q->execute();
+        $i=0;
+        while($result = $q->fetch(PDO::FETCH_OBJ))
+        {
+
+        ?>
+            <div class="item <?php if($i==0){ echo "active"; } ?>>" id="0"><img src="<?php echo baseurl; ?>banner/<?php echo $result->_picture; ?>" alt="csbazar"></div>
+<?php $i++; } ?>
+        </div>
+        <!-- Carousel nav -->
+    </div>

@@ -1,0 +1,16 @@
+[03-Sep-2013 11:09:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/csbazar/public_html/demo/CSAdmin/config.php:11
+Stack trace:
+#0 /home/csbazar/public_html/demo/CSAdmin/config.php(11): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/csbazar/public_html/demo/CSAdmin/index.php(2): require_once('/home/csbazar/p...')
+#2 {main}
+  thrown in /home/csbazar/public_html/demo/CSAdmin/config.php on line 11
+[03-Sep-2013 17:18:47 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/csbazar/public_html/demo/CSAdmin/allphpaction.php on line 18
+[08-Sep-2013 07:41:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/csbazar/public_html/demo/CSAdmin/config.php:11
+Stack trace:
+#0 /home/csbazar/public_html/demo/CSAdmin/config.php(11): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/csbazar/public_html/demo/CSAdmin/index.php(2): require_once('/home/csbazar/p...')
+#2 {main}
+  thrown in /home/csbazar/public_html/demo/CSAdmin/config.php on line 11
+[08-Sep-2013 08:35:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csbazar/public_html/demo/CSAdmin/config.php:28) in /home/csbazar/public_html/demo/CSAdmin/allphpaction.php on line 50
+[08-Sep-2013 08:44:09 UTC] PHP Fatal error:  Call to undefined function _rainsenitizedata() in /home/csbazar/public_html/demo/CSAdmin/allphpaction.php on line 91
+[08-Sep-2013 08:46:43 UTC] PHP Fatal error:  Call to undefined function _rainsenitizedata() in /home/csbazar/public_html/demo/CSAdmin/allphpaction.php on line 91
